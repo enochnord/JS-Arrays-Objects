@@ -136,3 +136,27 @@ function myForEach(arr, func) {
          func(arr[i]);   
     }
 }
+
+
+// printing out index 1 of an array inside an object
+var person = {
+    name: "Erick",
+    age: 19,
+    city: "Atlanta",
+    comments: ["Great, I really liked this.", "I do not like this."]
+}
+console.log(person.comments[1]);
+
+
+// printing out the name Malfoy from the nested object with an array
+var someObject = {
+    friends: [
+        {name: "Malfoy"},
+        {name: "Crabbe"},
+        {name: "Goyle"}
+    ],
+    color: "baby blue",
+    isEvil: true
+}
+console.log(someObject.friends[0].name);
+
